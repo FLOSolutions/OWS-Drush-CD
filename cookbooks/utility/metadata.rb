@@ -1,0 +1,6 @@
+maintainer          "Sam Kottler"
+maintainer_email    "sam@kottlerdevelopment.com"
+license             "GPL 3.0"
+description         "Installs a number of helpful packages for development and systems administration"
+version             "1.0"
+recipe              "utility", "Utility packages"
