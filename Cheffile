@@ -1,0 +1,45 @@
+#!/usr/bin/env ruby
+#^syntax detection
+
+site 'http://community.opscode.com/api/v1'
+
+cookbook 'apache2'
+cookbook 'apt'
+cookbook 'build-essential'
+cookbook 'cron'
+cookbook 'daemontools'
+cookbook 'emacs'
+cookbook 'gems'
+cookbook 'git'
+cookbook 'god'
+cookbook 'imagemagick'
+cookbook 'iptables'
+cookbook 'java'
+cookbook 'jenkins'
+cookbook 'logrotate'
+cookbook 'memcached'
+cookbook 'mercurial'
+cookbook 'mysql'
+cookbook 'nginx'
+cookbook 'perl'
+cookbook 'php'
+cookbook 'postfix'
+cookbook 'rsync'
+cookbook 'rsyslog'
+cookbook 'runit'
+cookbook 'sqlite'
+cookbook 'ssh_known_hosts'
+cookbook 'tomcat'
+cookbook 'ubuntu'
+cookbook 'ucspi-tcp'
+cookbook 'ufw'
+cookbook 'users'
+cookbook 'varnish'
+cookbook 'vim'
+
+cookbook 'user',
+  :git => 'https://github.com/fnichol/chef-user',
+  :ref => 'v0.2.6'
+
+cookbook 'utility',
+  :path => 'cookbooks-sources'

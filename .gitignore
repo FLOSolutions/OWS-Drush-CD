@@ -1,3 +1,6 @@
+.DS_Store
+.vagrant
+tmp/
 10.04-i386.box
 iso
 iso/*
