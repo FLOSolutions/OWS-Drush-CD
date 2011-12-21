@@ -1,7 +1,6 @@
-package "htop" do
-  action :install
-end
-
-package "mytop" do
-  action :install
+%w{
+  htop
+  mytop
+}.each do |pkg|
+  package pkg
 end
