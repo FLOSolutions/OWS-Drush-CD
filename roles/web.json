@@ -1,8 +1,42 @@
-execute "apt-get-update-initial" do
-  command "sudo apt-get update"
-  action :run
-end
-
-%w{ apache2 apt build-essential cron daemontools emacs gems git imagemagick iptables java logrotate memcached mercurial mysql nginx perl php postfix runit rsync rsyslog sqlite ubuntu ucspi-tcp utility varnish vim }.each do |dep|
-  include_recipe dep
-end
+{
+  "name": "web",
+  "default_attributes": {
+  },
+  "json_class": "Chef::Role",
+  "env_run_lists": {
+  },
+  "run_list": [
+    "recipe[apt]",
+    "recipe[apache2]",
+    "recipe[build-essential]",
+    "recipe[cron]",
+    "recipe[daemontools]",
+    "recipe[emacs]",
+    "recipe[gems]",
+    "recipe[git]",
+    "recipe[imagemagick]",
+    "recipe[iptables]",
+    "recipe[java]",
+    "recipe[logrotate]",
+    "recipe[memcached]",
+    "recipe[mercurial]",
+    "recipe[mysql]",
+    "recipe[nginx]",
+    "recipe[perl]",
+    "recipe[php]",
+    "recipe[postfix]",
+    "recipe[runit]",
+    "recipe[rsync]",
+    "recipe[rsyslog]",
+    "recipe[sqlite]",
+    "recipe[ubuntu]",
+    "recipe[ucspi-tcp]",
+    "recipe[utility]",
+    "recipe[varnish]",
+    "recipe[vim]"
+  ],
+  "description": "",
+  "chef_type": "role",
+  "override_attributes": {
+  }
+}
