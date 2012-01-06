@@ -8,6 +8,11 @@ cookbook 'apt'
 cookbook 'build-essential'
 cookbook 'cron'
 cookbook 'daemontools'
+
+cookbook 'drush',
+  :git => 'https://github.com/patcon/chef-drush',
+  :ref => 'master'
+
 cookbook 'emacs'
 cookbook 'gems'
 cookbook 'git'

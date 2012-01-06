@@ -10,6 +10,7 @@
     "recipe[build-essential]",
     "recipe[cron]",
     "recipe[daemontools]",
+    "recipe[drush]".
     "recipe[emacs]",
     "recipe[gems]",
     "recipe[git]",
